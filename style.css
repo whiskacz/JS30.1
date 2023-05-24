@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-image: url(img/farmWallpaper.jpeg);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+main{
+    text-align: center;
+    font-family: 'Smokum', cursive;
+    margin: 10vh;
+    font-size: 4rem;
+    cursor: pointer;
+    transition: .5s;
+    height: 10vh;
+}
+.keypad{
+    display: flex;
+    list-style: none;
+    justify-content: space-around
+}
+.keypad li{
+    display: flex;
+    width: 15vw;
+    height: 15vw;
+    border: 2px solid black;
+    text-align: center;
+    line-height: 100%;
+    cursor: pointer;
+
+}
+
+.keypad span{
+    font-family:'Roboto', sans-serif;
+    font-size: 60px;
+    margin: auto;
+    line-height: 100%;
+}
+.images{
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-around;
+    
+}
+img{
+    width: 20vw;
+    height: 20vh;
+}
+main:hover{
+    font-size: 6rem;
+    color: blue;
+}
+
+.shake {
+    animation: shake 1s
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+      }
+      
+      20%, 80% {
+        transform: translate3d(2px, 0, 0);
+      }
+    
+      30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+      }
+    
+      40%, 60% {
+        transform: translate3d(4px, 0, 0);
+      }
+}
